@@ -38,10 +38,10 @@ cd RAGPROJECT
 ```
 
 ### 2. התקנת הספריות הנדרשות
-הריצו את הפקודה הבאה כדי להתקין את כל התשתיות:
+פתחו את הטרמינל בתיקיית הפרויקט והריצו את הפקודה הבאה להתקנת כל התשתיות בבת אחת:
 
 ```bash
-pip install llama-index llama-index-llms-cohere llama-index-embeddings-cohere pinecone-client gradio python-dotenv
+pip install -r requirements.txt
 ```
 
 ### 3. הגדרת מפתחות API
@@ -61,10 +61,17 @@ PINECONE_API_KEY=your_key_here
 
 לחצו על **Run All (הפעל הכל)**. הממשק של **Gradio** יפתח ותוכלו להתחיל לשאול שאלות!
 
+<br/>
+
 ---
 
-👩‍💻 Developed By  
-מרים כ.
+<div align="center">
 
-📩 ליצירת קשר:  
-miri74804@gmail.com
+## 👩‍💻 Developed By
+**מרים כ.**
+
+[![Email](https://img.shields.io/badge/Email-miri74804%40gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:miri74804@gmail.com)
+
+</div>
+
+---
