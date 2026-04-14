@@ -70,7 +70,7 @@ PINECONE_API_KEY=your_key_here
 ## 👩‍💻 Developed By
 **מרים כ.**
 
-[![Email](https://img.shields.io/badge/Email-miri74804%40gmail.com-blue?style=for-the-badge&logo=gmail)](mailto:miri74804@gmail.com)
+**📩 ליצירת קשר:** [miri74804@gmail.com](mailto:miri74804@gmail.com)
 
 </div>
 
