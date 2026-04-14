@@ -8,7 +8,7 @@
 ## 🧠 ארכיטקטורת ה-Workflow
 הסוכן מנהל את זרימת המידע בצורה מבוזרת (Event-Driven):
 - **StartEvent**: קבלת שאילתה מהמשתמש.
-- **Route Step**: ניתוח השאילתה בעזרת Cohere LLM ובחירה בנתיב המתאים.
+- **Router Step**: ניתוח השאילתה בעזרת Cohere LLM ובחירה בנתיב המתאים.
 - **Search Steps**: חיפוש ב-Pinecone (Semantic) או שליפה מ-JSON (Structured).
 - **Synthesize Step**: בניית תשובה סופית מקצועית המבוססת על ההקשר שנמצא.
 
@@ -28,15 +28,43 @@
 - **Language:** Python
 
 ## 🚀 איך להריץ את הפרויקט
-1. בצעו Clone לריפו.
-2. התקינו דרישות: `pip install llama-index llama-index-llms-cohere pinecone-client gradio`.
-3. הגדירו מפתחות API בקובץ `.env`.
-4. הריצו את קובץ ה-Notebook או ה-Python הראשי.
+
+### 1. שיכפול הריפוזיטורי
+פתחו טרמינל והריצו:
+
+```bash
+git clone https://github.com/miri74804
+cd RAGPROJECT
+```
+
+### 2. התקנת הספריות הנדרשות
+הריצו את הפקודה הבאה כדי להתקין את כל התשתיות:
+
+```bash
+pip install llama-index llama-index-llms-cohere llama-index-embeddings-cohere pinecone-client gradio python-dotenv
+```
+
+### 3. הגדרת מפתחות API
+צרו קובץ בשם `.env` בתוך תיקיית `Project`.
+
+הוסיפו לקובץ את המפתחות שלכם בצורה הבאה:
+
+```
+COHERE_API_KEY=your_key_here
+PINECONE_API_KEY=your_key_here
+```
+
+### 4. הרצת הסוכן
+פתחו את התיקייה `Project` בתוך ה-VS Code.
+
+פתחו את קובץ המחברת: `Smart_AI_Agent_Workflow.ipynb`.
+
+לחצו על **Run All (הפעל הכל)**. הממשק של **Gradio** יפתח ותוכלו להתחיל לשאול שאלות!
 
 ---
 
-## 👩‍💻 Developed By
-**מרים כ.**
-📩 ליצירת קשר: miri74804@gmail.com
+👩‍💻 Developed By  
+מרים כ.
 
----
+📩 ליצירת קשר:  
+miri74804@gmail.com
